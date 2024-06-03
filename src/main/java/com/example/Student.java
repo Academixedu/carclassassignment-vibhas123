@@ -21,13 +21,61 @@ public class Student {
     // public String getMajor() { ... }
     // public void setMajor(String major) { ... }
 
+    
     // Method to display student details
     public void displayStudentDetails() {
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(studentId);
+        System.out.println(major);
         // TODO: Implement this method
+    }
+
+    public Student(String name, int age, String studentId, String major) {
+        this.name = name;
+        this.age = age;
+        this.studentId = studentId;
+        this.major = major;
+    }
+
+    
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public String getMajor() {
+        return major;
     }
 
     // Method to update major
     public void updateMajor(String newMajor) {
+
+        setMajor(newMajor);
         // TODO: Implement this method
     }
 }

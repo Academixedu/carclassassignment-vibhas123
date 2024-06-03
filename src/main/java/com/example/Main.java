@@ -15,5 +15,7 @@ public class Main {
         // Display updated car details
         System.out.println("\nUpdated Car Details:");
         myCar.displayCarDetails();
+
+        System.out.println("Make: " + myCar.getMake());
     }
 }

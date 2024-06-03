@@ -21,18 +21,63 @@ public class Bank {
     // public double getBalance() { ... }
     // public void setBalance(double balance) { ... }
 
+    public Bank(String bankName, String accountHolderName, String accountNumber, double balance) {
+        this.bankName = bankName;
+        this.accountHolderName = accountHolderName;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
     // Method to display account details
     public void displayAccountDetails() {
         // TODO: Implement this method
+        System.out.println(bankName);
+        System.out.println(accountHolderName);
+        System.out.println(accountNumber);
+        System.out.println(balance);
     }
 
     // Method to deposit money
     public void deposit(double amount) {
+        setBalance(getBalance()+amount);
         // TODO: Implement this method
     }
 
     // Method to withdraw money
     public void withdraw(double amount) {
+        setBalance(getBalance()-amount);
         // TODO: Implement this method
     }
 }

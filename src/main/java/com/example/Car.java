@@ -60,7 +60,7 @@ public class Car {
 
     // Method to display car details
     public void displayCarDetails() {
-        System.out.println("Make: " + make);
+        System.out.println("Make: " + getMake());
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
         System.out.println("Color: " + color);
